@@ -1,0 +1,168 @@
+<title>DY 일일 뉴스 브리핑 10.26</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: single-column newsroom memo; ranked rows with source chips, two sections, notes at end */
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --fg:#17202b; --muted:#5b6675; --line:#dde2e8;
+  --accent:#0b5cad; --accent-soft:#e6eff9; --warn:#9a5b00; --warn-soft:#fdf3e2;
+  --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f141a; --surface:#171e27; --fg:#e6ebf1; --muted:#9aa6b4; --line:#2a3440;
+  --accent:#6aaef0; --accent-soft:#1a2b3f; --warn:#f0b257; --warn-soft:#33270f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141a; --surface:#171e27; --fg:#e6ebf1; --muted:#9aa6b4; --line:#2a3440;
+  --accent:#6aaef0; --accent-soft:#1a2b3f; --warn:#f0b257; --warn-soft:#33270f; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.6}
+.wrap{max-width:920px;margin:0 auto;padding-block:32px 56px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:36px}
+header{display:flex;flex-direction:column;gap:8px;border-bottom:2px solid var(--fg);padding-bottom:18px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:28px;line-height:1.3;margin:0;text-wrap:balance;font-weight:700}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:13.5px}
+.meta b{color:var(--fg);font-weight:600}
+h2{font-size:19px;margin:0;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+h2 small{font-weight:400;color:var(--muted);font-size:13px}
+section{display:flex;flex-direction:column;gap:14px}
+ol.rank{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:6px}
+ol.rank li{display:grid;grid-template-columns:40px 1fr;gap:4px 14px;padding:16px 18px;border-top:1px solid var(--line)}
+ol.rank li:first-child{border-top:0}
+.no{font-family:var(--mono);font-size:20px;color:var(--accent);line-height:1.3;grid-row:span 3}
+.row1{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{font-size:12px;font-weight:600;padding:1px 8px;border-radius:3px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.cnt{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ttl{font-weight:600;font-size:16px;line-height:1.45;min-width:0}
+.ttl a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.ttl a:hover,.ttl a:focus-visible{border-bottom-color:var(--accent);color:var(--accent);outline:none}
+.desc{color:var(--muted);font-size:14px;min-width:0}
+.desc .imp{color:var(--fg)}
+.desc .imp::before{content:"당사 시사점 · ";font-weight:600;color:var(--accent)}
+.src{font-size:12.5px;color:var(--muted)}
+.notice{background:var(--warn-soft);color:var(--fg);border-left:3px solid var(--warn);padding:10px 14px;font-size:14px;border-radius:0 4px 4px 0}
+.notice b{color:var(--warn)}
+.also{font-size:14px;color:var(--muted);padding:0 2px}
+.also b{color:var(--fg);font-weight:600}
+.also a{color:var(--accent)}
+.kw{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;font-size:13px}
+.kw div{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:8px 10px;min-width:0}
+.kw b{display:block;font-size:12px;color:var(--accent)}
+.kw span{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px;display:flex;flex-direction:column;gap:6px}
+footer ul{margin:0;padding-left:18px}
+@media (max-width:520px){h1{font-size:23px}ol.rank li{grid-template-columns:30px 1fr;padding:14px}.no{font-size:17px}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">디지털혁신팀 · Daily News Briefing</div>
+  <h1>일일 뉴스 브리핑 · 2026년 10월 26일(월)</h1>
+  <div class="meta">
+    <span>수집 기간 <b>10.25 06:30 ~ 10.26 06:30</b></span>
+    <span>대상 기사 <b>238건</b> / 원본 252건</span>
+    <span>매체 <b>6개사</b> (경향·동아·매일·아주·중앙·한겨)</span>
+  </div>
+</header>
+
+<section>
+  <h2>Ⅰ. 매체별 통합 인기 뉴스 TOP 5 <small>동시 보도량 · 속보성 · 파급력 · 분야 안배 기준</small></h2>
+  <ol class="rank">
+
+    <li><span class="no">1</span>
+      <div class="row1"><span class="tag">경제</span><span class="cnt">5개사 보도</span></div>
+      <div class="ttl"><a href="https://www.khan.co.kr/article/202610251129001" target="_blank" rel="noopener">한국 2분기 경상흑자 1,166억 달러…독일·일본 합계 사상 첫 추월, 세계 2위</a></div>
+      <div class="desc">반도체가 이끈 경상흑자로 증가폭은 세계 1위 전망. 다만 산업별 양극화는 과제로 지적됨.<div class="src">경향신문 · 매일경제 · 중앙일보 · 한겨레 · 동아일보</div></div>
+    </li>
+
+    <li><span class="no">2</span>
+      <div class="row1"><span class="tag">산업·규제</span><span class="cnt">4개사 보도</span></div>
+      <div class="ttl"><a href="https://www.khan.co.kr/article/202610251048001" target="_blank" rel="noopener">공정위원장 &quot;조사 거부하면 매출 1%까지 과징금&quot;…쿠팡·한화 겨냥</a></div>
+      <div class="desc">쿠팡·한화의 조사 거부 논란을 계기로 공정위가 과징금 기준을 매출액 1%까지 확대 추진.<div class="src">아주경제 · 매일경제 · 경향신문 · 한겨레</div></div>
+    </li>
+
+    <li><span class="no">3</span>
+      <div class="row1"><span class="tag">국제</span><span class="cnt">3개사 보도</span></div>
+      <div class="ttl"><a href="https://www.hani.co.kr/arti/international/international_general/1284029.html" target="_blank" rel="noopener">트럼프 &quot;내일이라도 이란 공격&quot;…걸프 지역 미국인 출국 명령</a></div>
+      <div class="desc">국제유가는 다시 110달러 안팎. 난방자재 19%, 전기보일러 21% 오르는 등 중동발 물가 압력이 커짐.<div class="src">한겨레 · 아주경제 · 중앙일보</div></div>
+    </li>
+
+    <li><span class="no">4</span>
+      <div class="row1"><span class="tag">정책·세제</span><span class="cnt">3개사 보도</span></div>
+      <div class="ttl"><a href="https://www.ajunews.com/view/20261025171153296" target="_blank" rel="noopener">가상자산 과세 또 &#x27;유예&#x27; 가닥…시행 두 달 앞두고 당정 유예 방향</a></div>
+      <div class="desc">청년 여론을 의식해 조세 원칙을 허문다는 비판이 나옴.<div class="src">아주경제 · 한겨레 · 경향신문</div></div>
+    </li>
+
+    <li><span class="no">5</span>
+      <div class="row1"><span class="tag">사회</span><span class="cnt">3개사 보도</span></div>
+      <div class="ttl"><a href="https://www.khan.co.kr/article/202610251330001" target="_blank" rel="noopener">늦게 온 태풍 &#x27;참피&#x27; 제주 최근접…한라산 사흘간 295㎜ 폭우·전면 통제</a></div>
+      <div class="desc">강풍·침수 피해가 잇따르고 남해안에도 강한 비. 태풍 뒤에는 반짝 한파 예보.<div class="src">중앙일보 · 경향신문 · 한겨레</div></div>
+    </li>
+
+  </ol>
+
+  <p class="also"><b>TOP 5에 못 든 화제 사안</b> · 삼성전자·SK하이닉스 3분기 영업이익 180조원대 전망 · 코스피 급락으로 10대 그룹 시총 1,100조 증발, 골드만삭스 목표치 9,000으로 하향 · 김정은 방중(단둥) · 프랑스 41만명 시위 · &#x27;PHP 취약점&#x27; 보안 비상 · 아이폰 듀오 내구성 논란 · 햇반 출시 30주년</p>
+
+</section>
+
+<section>
+  <h2>Ⅱ. 당사 관심 키워드 뉴스 TOP 5</h2>
+
+  <div class="notice"><b>디와이그룹사 직접 언급 기사 없음.</b> 디와이사업부 사업군(펌프카·세차기·골프카·크레인·특장차·고소작업차 등) 관련 기사도 이번 기간에는 없었습니다.</div>
+
+  <ol class="rank">
+
+    <li><span class="no">1</span>
+      <div class="row1"><span class="tag">(4) 건설기계·굴삭기</span><span class="cnt">아주경제</span></div>
+      <div class="ttl"><a href="https://www.ajunews.com/view/20261025140304964" target="_blank" rel="noopener">HD현대사이트솔루션, 무인 굴착기 국책과제 선정…기술 고도화 추진</a></div>
+      <div class="desc"><span class="imp">건설장비 자율화·무인화가 빨라지는 흐름. 유압실린더 제어 정밀도에 대한 요구가 커질 가능성.</span></div>
+    </li>
+
+    <li><span class="no">2</span>
+      <div class="row1"><span class="tag">(3) 자동차산업</span><span class="cnt">아주경제 · 한겨레 · 경향신문</span></div>
+      <div class="ttl"><a href="https://www.hani.co.kr/arti/economy/economy_general/1284010.html" target="_blank" rel="noopener">반도체만 &#x27;맑음&#x27;, 자동차는 &#x27;흐림&#x27;…11월 제조업 경기 기대감 11p 하락</a></div>
+      <div class="desc"><span class="imp">자동차·화학 업종의 경기 회복 기대가 꺾임. 자동차부품 수요 둔화에 대비 필요.</span></div>
+    </li>
+
+    <li><span class="no">3</span>
+      <div class="row1"><span class="tag">(3) 글로벌자동차·전기차</span><span class="cnt">중앙일보</span></div>
+      <div class="ttl"><a href="https://www.joongang.co.kr/article/25472578" target="_blank" rel="noopener">전략형 전기차도 안 통했다…현대차·기아, 중국 월 판매 1만대 밑</a></div>
+      <div class="desc"><span class="imp">완성차의 중국 사업 부진이 이어짐. 관련 부품 공급망의 물량 점검 필요.</span></div>
+    </li>
+
+    <li><span class="no">4</span>
+      <div class="row1"><span class="tag">(3) 배터리</span><span class="cnt">중앙일보</span></div>
+      <div class="ttl"><a href="https://www.joongang.co.kr/article/25472613" target="_blank" rel="noopener">&#x27;꿈의 배터리&#x27;(전고체) 엇갈린 전략…삼성은 속도전, LG는 신중론</a></div>
+      <div class="desc"><span class="imp">차세대 배터리 상용화 시점이 불확실해 전기차용 모터·부품 로드맵에 영향.</span></div>
+    </li>
+
+    <li><span class="no">5</span>
+      <div class="row1"><span class="tag">(3) 자율주행</span><span class="cnt">경향신문</span></div>
+      <div class="ttl"><a href="https://www.khan.co.kr/article/202610251420001" target="_blank" rel="noopener">&#x27;자유영혼&#x27; 테슬라와 &#x27;범생이&#x27; 샤오펑…자율주행 돌발상황 대처법은?</a></div>
+      <div class="desc"><span class="imp">미국·중국 업체의 자율주행 기술 격차와 안전성 이슈 비교.</span></div>
+    </li>
+
+  </ol>
+
+  <p class="also"><b>참고 후보</b> · <a href="https://www.ajunews.com/view/20261025152950199" target="_blank" rel="noopener">솔리다임 IPO 중단에…현대차, 보스턴다이나믹스 상장 셈법 복잡</a> (로보틱스) · <a href="https://www.joongang.co.kr/article/25472529" target="_blank" rel="noopener">정부는 &#x27;닥공&#x27; 외치는데…폐업건설사 역대 최고</a> (건설장비 수요에 간접 영향) · <a href="https://www.khan.co.kr/article/202610252105015" target="_blank" rel="noopener">&#x27;파리모터쇼 2026&#x27;에서 만난 이색 초소형 전기차</a> (전기차)</p>
+
+  <div class="kw">
+    <div><b>(1) 디와이그룹사</b><span>해당 기사 없음</span></div>
+    <div><b>(2) 디와이사업부 사업군</b><span>해당 기사 없음</span></div>
+    <div><b>(3) 자동차 산업군</b><span>4건 선정</span></div>
+    <div><b>(4) 유압실린더 산업군·고객사</b><span>1건 선정</span></div>
+  </div>
+
+</section>
+
+<footer>
+  <div>작성 기준과 참고 사항</div>
+  <ul>
+    <li>원본: 구글 드라이브 &#x27;디지털혁신팀클로드&#x27; 시트 (252건). 같은 사안을 다룬 기사는 대표 1건만 남겼습니다.</li>
+    <li>날짜 칸이 &#x27;#########&#x27;로 들어온 행은 URL에서 날짜를 읽었습니다(아주경제·동아일보). 기간 밖 기사 14건을 제외했고, 날짜를 확인할 수 없는 한겨레 기사 43건은 기간 안으로 보고 포함했습니다.</li>
+    <li>시트에 본문이 없어 요약과 시사점은 기사 제목을 바탕으로 작성했습니다.</li>
+  </ul>
+</footer>
+</div>
